@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import LocalStorage from './LocalStorage/LocalStorage';
+import UseRefWork from './UseRef/UseRefWork';
+import FormWork from './WorkingWithForm/FormWork';
+import FormWorks2 from './WorkingWithForm/FormWorks2';
+import FormWorks3 from './WorkingWithForm/FormWorks3';
+import FormWorks4 from './WorkingWithForm/FormWorks4';
+import LoginDemo from './WorkingWithForm/LoginDemo';
+import './style.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container bg-dark text-light cx-main p-5">
+      
+      
+       {/* <FormWork/> */}
+       {/* <FormWorks2/> */}
+       {/* <FormWorks3/> */}
+        {/* <LoginDemo/> */}
+        {/* <FormWorks4/> */}
+        {/* <UseRefWork/> */}
+        <LocalStorage/>
     </div>
   );
 }
