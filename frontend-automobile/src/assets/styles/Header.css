@@ -1,0 +1,139 @@
+.r-color {
+  background-color: #c52631;
+  color: white;
+  border: none;
+}
+.r-color:hover {
+  background-color: #b11f28;
+  color: white;
+}
+.form-control:focus {
+  box-shadow: 2px 2px 10px #b11f28;
+  border: 1px solid #b11f28;
+}
+
+/* General Header Styles */
+.custom-header {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+}
+
+.logo-container img {
+  max-width: 50px;
+  height: auto;
+}
+
+.brand-name {
+  color: #333;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.hamburger {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #333;
+  display: none; /* Hidden on larger screens */
+}
+
+/* Menu Links - Hidden by default on mobile */
+.menu-links {
+  display: flex;
+  align-items: center;
+}
+
+.menu-links.open {
+  display: flex;
+}
+
+.menu-links {
+  display: none; /* Hide on mobile screens */
+}
+
+.custom-button {
+  background-color: #c52631;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #b11f28;
+}
+
+.search-input {
+  width: 250px;
+}
+
+.search-input:focus {
+  box-shadow: 2px 2px 10px #b11f28;
+  border: 1px solid #b11f28;
+}
+
+/* Mobile Styles */
+@media (max-width: 992px) {
+  .hamburger {
+    display: block; /* Show hamburger on smaller screens */
+  }
+
+  .menu-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 999;
+  }
+
+  .menu-links.open {
+    display: flex;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .custom-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .menu-links.open {
+    display: flex; /* Show menu when open */
+  }
+
+  .menu-links {
+    display: none; /* Hide menu by default on mobile */
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 576px) {
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .custom-button {
+    font-size: 0.9rem;
+  }
+}
